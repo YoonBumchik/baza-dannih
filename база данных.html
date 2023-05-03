@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EtoBAZA!!!</title>
+</head>
+<body>
+    <script>
+
+    class category { 
+        constructor(ID,title){
+            this.ID=ID;
+            this.title=title;
+        }
+        }
+
+    class salers { 
+        constructor(ID,title){
+            this.ID=ID;
+            this.title=title;
+        }
+        }
+
+    class brands { 
+        constructor(ID,title){
+            this.ID=ID;
+            this.title=title;
+        }
+
+
+    }
+    
+    class product {
+        constructor(ID,title,category_id,salers_id,brand_id){
+            this.ID=ID;
+            this.title=title;
+            this.category_ID=category_id;
+            this.salers_ID=salers_id;
+            this.brand_ID=brand_id;
+        }
+    }
+
+    function check_product(id){
+        for(let i=0; i<= prod.length; i++){
+            if(prod[i].ID==id){
+                console.log(prod[i].title)
+                console.log(cat[prod[i].category_ID].title)
+                console.log(sal[prod[i].salers_ID].title)
+                console.log(bran[prod[i].brand_ID].title)
+            }
+    }
+        }
+
+        let prod=[]
+        let cat=[]
+        let sal=[]
+        let bran=[]
+
+        prod.push(new product(0,'Kin_pomidorom_v_skaramuchu',0,0,0),new product(1,'Paimon',1,4,2),new product(2,'Leon_iz_brawl_stars',3,3,4),new product(3,'Gemi_na_waifu',2,1,1),new product(4,'Zachet_po_opd',4,2,3))
+        cat.push(new category(0,"Kidalovo"), new category(1, "Conserva"),new category(2,"Primogems"),new category(3,"aa, zaforsili"),new category(4,"Nevozmozhnoe"))
+        sal.push(new salers(0,'Raiden Shogun'),new salers(1,'GenshinDrop'),new salers(2,'Opdshnik'),new salers(3,'Supercell'),new salers(4,'Aether'))
+        bran.push(new brands(0,'Bulling'),new brands(1,'Genshin'),new brands(2,'Druzey_na_dengi_menyayut'),new brands(3,'Mechta'),new brands(4,'Brawl_stars'))
+
+    </script>
+</body>
+</html>
